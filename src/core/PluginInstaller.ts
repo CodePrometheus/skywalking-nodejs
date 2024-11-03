@@ -296,6 +296,16 @@ export default class PluginInstaller {
     } catch {
       // ESLINT SUCKS!
     }
+
+    try {
+      this.installBundledPlugin(
+        'NodeRdKafkaPlugin',
+        require('../plugins/NodeRdKafkaPlugin').default,
+        require('kafkajs/package.json').version,
+      );
+    } catch {
+      // ESLINT SUCKS!
+    }
   }
 
   install(): void {

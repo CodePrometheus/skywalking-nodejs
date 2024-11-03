@@ -24,6 +24,8 @@ export class Component {
   static readonly REDIS = new Component(7);
   static readonly MONGODB = new Component(9);
   static readonly POSTGRESQL = new Component(22);
+  static readonly KAFKA_PRODUCER = new Component(40);
+  static readonly KAFKA_CONSUMER = new Component(41);
   static readonly HTTP_SERVER = new Component(49);
   static readonly RABBITMQ_PRODUCER = new Component(52);
   static readonly RABBITMQ_CONSUMER = new Component(53);
